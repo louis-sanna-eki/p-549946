@@ -17,7 +17,7 @@ export function NavigationItem({ icon, title, badge, to }: NavigationItemProps) 
     <Link to={to}>
       <div className={cn(
         "flex items-center gap-3 px-4 py-2 rounded-lg cursor-pointer",
-        active ? "bg-[#4F46E5] text-white" : "hover:bg-sidebar-accent/50"
+        active ? "bg-[#4F46E5] text-white" : "text-gray-700 hover:bg-sidebar-accent/50"
       )}>
         <img src={icon} alt="" className={cn(
           "w-5 h-5",
