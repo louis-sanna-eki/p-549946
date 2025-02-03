@@ -22,8 +22,10 @@ export function NavigationItem({ icon, title, badge, to }: NavigationItemProps) 
         <img 
           src={icon} 
           alt="" 
-          className="w-5 h-5" 
-          style={{ filter: active ? 'brightness(0) invert(1)' : 'none' }}
+          className={cn(
+            "w-5 h-5",
+            active && "brightness-0 invert"
+          )}
           loading="lazy" 
         />
         <span className="flex-grow text-sm font-medium">{title}</span>
