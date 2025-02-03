@@ -17,12 +17,18 @@ export function NavigationItem({ icon, title, badge, to }: NavigationItemProps) 
     <Link to={to}>
       <div className={cn(
         "flex items-center gap-3 px-4 py-2 rounded-lg cursor-pointer",
-        active ? "bg-sidebar-accent text-sidebar-accent-foreground" : "hover:bg-sidebar-accent/50"
+        active ? "bg-[#4F46E5] text-white" : "hover:bg-sidebar-accent/50"
       )}>
-        <img src={icon} alt="" className="w-5 h-5" loading="lazy" />
+        <img src={icon} alt="" className={cn(
+          "w-5 h-5",
+          active ? "brightness-0 invert" : ""
+        )} loading="lazy" />
         <span className="flex-grow text-sm font-medium">{title}</span>
         {badge && (
-          <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-sidebar-accent text-sidebar-accent-foreground">
+          <span className={cn(
+            "px-2 py-0.5 text-xs font-medium rounded-full",
+            active ? "bg-white/20 text-white" : "bg-sidebar-accent text-sidebar-accent-foreground"
+          )}>
             {badge}
           </span>
         )}
