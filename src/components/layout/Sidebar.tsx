@@ -6,21 +6,24 @@ const navigationItems = [
   {
     icon: "https://cdn.builder.io/api/v1/image/assets/fefc4dc743f5437b91c732647225a5b8/71096e2dfbab3881c10cb6ac25dffafa32661e3bf301bb3e7eb0b1b172feedb4",
     title: "Performance",
-    active: true
+    to: "/performance"
   },
   {
     icon: "https://cdn.builder.io/api/v1/image/assets/fefc4dc743f5437b91c732647225a5b8/0c78c0d737c9b4e0733cdeaf24fddb25883d91554f956dabca16f64e31fbe15b",
-    title: "Forecast"
+    title: "Forecast",
+    to: "/forecast"
   },
   {
     icon: "https://cdn.builder.io/api/v1/image/assets/fefc4dc743f5437b91c732647225a5b8/e306aaa5b94f211b84b544885dfddc5a4f7ab7a6333651a77a6c212270ddbd1f",
     title: "Reports",
-    badge: "12"
+    badge: "12",
+    to: "/reports"
   },
   {
     icon: "https://cdn.builder.io/api/v1/image/assets/fefc4dc743f5437b91c732647225a5b8/605002b8f48484dedad45c89be90d3c82615ab8f691b6b796fbfece040928c70",
     title: "Documents",
-    badge: "12"
+    badge: "12",
+    to: "/documents"
   }
 ];
 
@@ -42,7 +45,7 @@ export function Sidebar() {
             icon={item.icon}
             title={item.title}
             badge={item.badge}
-            active={item.active}
+            to={item.to}
           />
         ))}
       </nav>
@@ -51,6 +54,7 @@ export function Sidebar() {
         <NavigationItem
           icon="https://cdn.builder.io/api/v1/image/assets/fefc4dc743f5437b91c732647225a5b8/435c42bb5e6dcf75d9abf3907388fe27eb110811b7892aa9c584e1081bbe401c"
           title="Settings"
+          to="/settings"
         />
         <Separator className="my-2" />
         <ProfileSection />
