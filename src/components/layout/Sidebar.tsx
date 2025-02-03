@@ -1,26 +1,27 @@
 import { NavigationItem } from "./NavigationItem";
 import { ProfileSection } from "./ProfileSection";
 import { Separator } from "@/components/ui/separator";
+import { BarChart3, TrendingUp, FileText, Files, Settings } from "lucide-react";
 
 const navigationItems = [
   {
-    icon: "https://cdn.builder.io/api/v1/image/assets/fefc4dc743f5437b91c732647225a5b8/71096e2dfbab3881c10cb6ac25dffafa32661e3bf301bb3e7eb0b1b172feedb4",
+    icon: BarChart3,
     title: "Performance",
     to: "/performance"
   },
   {
-    icon: "https://cdn.builder.io/api/v1/image/assets/fefc4dc743f5437b91c732647225a5b8/0c78c0d737c9b4e0733cdeaf24fddb25883d91554f956dabca16f64e31fbe15b",
+    icon: TrendingUp,
     title: "Forecast",
     to: "/forecast"
   },
   {
-    icon: "https://cdn.builder.io/api/v1/image/assets/fefc4dc743f5437b91c732647225a5b8/e306aaa5b94f211b84b544885dfddc5a4f7ab7a6333651a77a6c212270ddbd1f",
+    icon: FileText,
     title: "Reports",
     badge: "12",
     to: "/reports"
   },
   {
-    icon: "https://cdn.builder.io/api/v1/image/assets/fefc4dc743f5437b91c732647225a5b8/605002b8f48484dedad45c89be90d3c82615ab8f691b6b796fbfece040928c70",
+    icon: Files,
     title: "Documents",
     badge: "12",
     to: "/documents"
@@ -52,7 +53,7 @@ export function Sidebar() {
 
       <div className="mt-auto">
         <NavigationItem
-          icon="https://cdn.builder.io/api/v1/image/assets/fefc4dc743f5437b91c732647225a5b8/c7321c0d4b17b54d9f8068fe5652ce23a3e9f9056e9f3e6a6ff86c9c4a35fc99"
+          icon={Settings}
           title="Settings"
           to="/settings"
         />
