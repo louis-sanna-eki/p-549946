@@ -52,7 +52,7 @@ export function Sidebar() {
 
       <div className="mt-auto">
         <NavigationItem
-          icon="https://cdn.builder.io/api/v1/image/assets/fefc4dc743f5437b91c732647225a5b8/435c42bb5e6dcf75d9abf3907388fe27eb110811b7892aa9c584e1081bbe401c"
+          icon="https://cdn.builder.io/api/v1/image/assets/fefc4dc743f5437b91c732647225a5b8/c7321c0d4b17b54d9f8068fe5652ce23a3e9f9056e9f3e6a6ff86c9c4a35fc99"
           title="Settings"
           to="/settings"
         />
