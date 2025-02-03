@@ -1,13 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Layout } from "@/components/layout/Layout";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <Layout>
+      <div className="grid gap-6">
+        {/* Add your dashboard content here */}
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <div className="p-6 bg-card rounded-lg border">
+            <h3 className="text-lg font-medium">Performance Metrics</h3>
+            <p className="text-sm text-muted-foreground">Coming soon...</p>
+          </div>
+          <div className="p-6 bg-card rounded-lg border">
+            <h3 className="text-lg font-medium">Revenue</h3>
+            <p className="text-sm text-muted-foreground">Coming soon...</p>
+          </div>
+          <div className="p-6 bg-card rounded-lg border">
+            <h3 className="text-lg font-medium">Growth</h3>
+            <p className="text-sm text-muted-foreground">Coming soon...</p>
+          </div>
+          <div className="p-6 bg-card rounded-lg border">
+            <h3 className="text-lg font-medium">Analysis</h3>
+            <p className="text-sm text-muted-foreground">Coming soon...</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 
